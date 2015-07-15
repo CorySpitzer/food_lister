@@ -12,6 +12,7 @@ gem 'bootstrap-sass'
 gem 'bcrypt', require: "bcrypt"
 gem 'sqlite3'
 gem 'devise'
+gem 'will_paginate', '~> 3.0.6'
 
 group :production do
   gem 'rails_12factor'
