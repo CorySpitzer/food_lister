@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150715171713) do
+ActiveRecord::Schema.define(version: 20150715173710) do
+
+  create_table "foods", force: :cascade do |t|
+    t.string  "name"
+    t.integer "calories"
+    t.string  "serving"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -26,6 +32,7 @@ ActiveRecord::Schema.define(version: 20150715171713) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "total_calories"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

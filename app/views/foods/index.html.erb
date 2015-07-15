@@ -1,0 +1,7 @@
+<h1 class="food-header">Food!</h1>
+<div class="foods">
+  <% @foods.each do |food| %>
+    <h3><%= food.name %>, <%= food.serving %></h3>
+    <h4><%= food.calories %> Calories</h4>
+  <% end %>
+</div>
