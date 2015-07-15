@@ -8,9 +8,9 @@
 <table class="table table-hover foods">
     <thead>
       <tr class="food-headers">
-        <th><%= sortable "name"%></th>
-        <th><%= sortable "serving", "Serving Size" %></th>
-        <th><%= sortable "calories"%></th>
+        <th><%= sortable "name" %> <%= get_arrow("name") %></th>
+        <th><%= sortable "serving", "Serving Size" %><%= get_arrow("serving") %></th>
+        <th><%= sortable "calories" %> <%= get_arrow("calories") %></th>
       </tr>
     </thead>
     <tbody>
