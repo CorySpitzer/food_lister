@@ -16,7 +16,14 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-.foods, .food-header{
-  text-align:center;
+.food:hover{
+  cursor:pointer;
+}
 
+.foods{
+  font-size:20px;
+}
+
+.food-headers{
+  font-size:30px;
 }
