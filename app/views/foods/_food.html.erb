@@ -7,13 +7,13 @@
       </tr>
     </thead>
     <tbody>
-      <% @foods.each do |food| %>
+      <% @food.each do |f| %>
         <tr class="food">
-          <td><%= food.name %></td>
-          <td><%= food.serving %></td>
-          <td><%= food.calories %></td>
+          <td><%= f.name %></td>
+          <td><%= f.serving %></td>
+          <td><%= f.calories %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
-  <%= will_paginate @foods %>
+  <%= will_paginate @food %>

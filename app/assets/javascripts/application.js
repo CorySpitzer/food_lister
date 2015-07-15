@@ -15,3 +15,11 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+
+$(function() {
+  $(document).on("click", "#foods-div th a, #foods-div .pagination a", function() {
+    $.getScript(this.href);
+    return false;
+  });
+
+});
