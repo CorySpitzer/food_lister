@@ -8,9 +8,9 @@
 <table class="table table-hover foods">
     <thead>
       <tr class="food-headers">
-        <th>Food</th>
-        <th>Serving Size</th>
-        <th>Calories</th>
+        <th><%= sortable "name"%></th>
+        <th><%= sortable "serving", "Serving Size" %></th>
+        <th><%= sortable "calories"%></th>
       </tr>
     </thead>
     <tbody>
