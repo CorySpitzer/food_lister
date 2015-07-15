@@ -5,7 +5,6 @@ gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
-gem 'jquery-rails'
 gem 'turbolinks'
 gem 'pry'
 gem 'bootstrap-sass'
@@ -13,6 +12,9 @@ gem 'bcrypt', require: "bcrypt"
 gem 'sqlite3'
 gem 'devise'
 gem 'will_paginate', '~> 3.0.6'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'jquery-turbolinks'
 
 group :production do
   gem 'rails_12factor'

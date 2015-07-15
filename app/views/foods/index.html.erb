@@ -7,22 +7,4 @@
   </p>
 <% end %>
 
-<table class="table table-hover foods">
-    <thead>
-      <tr class="food-headers">
-        <th><%= sortable "name" %> <%= get_arrow("name") %></th>
-        <th><%= sortable "serving" %> <%= get_arrow("serving") %></th>
-        <th><%= sortable "calories" %> <%= get_arrow("calories") %></th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @foods.each do |food| %>
-        <tr class="food">
-          <td><%= food.name %></td>
-          <td><%= food.serving %></td>
-          <td><%= food.calories %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-  <%= will_paginate @foods %>
+<%= render 'foods' %>
