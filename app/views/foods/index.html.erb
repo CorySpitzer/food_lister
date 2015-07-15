@@ -1,4 +1,6 @@
 <%= form_tag foods_path, :method => 'get' do %>
+  <%= hidden_field_tag :direction, params[:direction] %>
+  <%= hidden_field_tag :sort, params[:sort] %>
   <p>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :name => nil %>
@@ -9,7 +11,7 @@
     <thead>
       <tr class="food-headers">
         <th><%= sortable "name" %> <%= get_arrow("name") %></th>
-        <th><%= sortable "serving", "Serving Size" %><%= get_arrow("serving") %></th>
+        <th><%= sortable "serving" %> <%= get_arrow("serving") %></th>
         <th><%= sortable "calories" %> <%= get_arrow("calories") %></th>
       </tr>
     </thead>
