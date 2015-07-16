@@ -17,6 +17,8 @@ gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
 gem 'simple_form'
 gem 'textacular', '~> 3.0'
+gem 'momentjs-rails', '>= 2.8.1'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
 
 group :production do
   gem 'rails_12factor'

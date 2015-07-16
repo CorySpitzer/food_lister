@@ -10,11 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require_tree .
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require_tree .
+//= require moment
+//= require bootstrap-datetimepicker
 
 // $(function() {
 //   $(document).on("click", "#foods-div .pagination a", function() {

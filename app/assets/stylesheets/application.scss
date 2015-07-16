@@ -12,10 +12,11 @@
  *
  *= require_tree .
  *= require_self
-
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import 'bootstrap-datetimepicker';
+
 
 .food:hover{
   cursor:pointer;
