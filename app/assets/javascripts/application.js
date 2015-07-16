@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require bootstrap-sprockets
+//= require_tree .
 
 // $(function() {
 //   $(document).on("click", "#foods-div .pagination a", function() {

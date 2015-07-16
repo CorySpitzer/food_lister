@@ -2,7 +2,11 @@
 
 <div class="results">
   <h2>SEARCH</h2>
-  <% @search_results.each do |result| %>
-    <%= result.name %>
-  <% end %>
+  <ul>
+    <% @search_results.each do |result| %>
+      <li>
+        <%= result.name + ': ' + result.serving + ' | ' %> <%= link_to 'I ate this', new_food_path %>
+      </li>
+    <% end %>
+  </ul>
 </div>
