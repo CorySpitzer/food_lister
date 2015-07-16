@@ -1,5 +1,7 @@
 class Food < ActiveRecord::Base
 
+  belongs_to(:user)
+
   def self.column_names
     ["name", "serving", "calories"]
   end

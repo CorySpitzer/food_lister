@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+  <div class="notice">
+  </div>
+  <h3><%= @user.email %></h3>
+  <%= link_to 'New Day', new_user_day_path(current_user), remote: true %>
+
+  <div class="row">
+    <div class="col-sm-12 well days">
+      <h2>Tracked Calories</h2>
+        <% @user.days.each do |day| %>
+          <div class="well">
+            <h2>day.date</h2>
+            <% day.foods.each do |food| %>
+              <%= food.name %>
+              <%= food.calories %>
+            <% end %>
+          </div>
+        <% end %>
+    </div>
+  </div>
+<% else %>
+  <h4>Nope! Sorry, please sign in.</h4>
+<% end %>
