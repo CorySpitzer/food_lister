@@ -7,7 +7,7 @@
       </tr>
     </thead>
     <tbody>
-      <% @food.each do |f| %>
+      <% @foods.each do |f| %>
         <tr class="food">
           <td><%= f.name %></td>
           <td><%= f.serving %></td>
@@ -16,4 +16,11 @@
       <% end %>
     </tbody>
   </table>
-  <%= will_paginate @food %>
+  <%= will_paginate @foods %>
+
+<script>
+
+$(function(){
+   $('.pagination a').attr('data-remote', 'true')
+});
+</script>
