@@ -8,6 +8,13 @@ class Food < ActiveRecord::Base
     ["name", "serving", "calories"]
   end
 
+  # def self.days
+  #   days = []
+  #   Food.all.each do |food|
+  #     days.push(food.date)
+  #   end
+  # end
+
   def self.search(search)
     if search
       where('name LIKE ?', "%#{search.strip}%")

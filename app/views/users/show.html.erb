@@ -1,5 +1,17 @@
 <%= render 'user' %>
 
+<div class="user-foods">
+  <h2><%= @user.email%> has eaten: </h2>
+  <ul class="list-unstyled">
+    <% @user.foods.each do |food| %>
+      <li><%= food.date %>
+      <%= food.name %>
+      <%= food.serving %>
+      <%= food.calories %></li>
+    <% end %>
+  </ul>
+</div>
+
 <div class="results">
   <h2>SEARCH</h2>
   <ul>
