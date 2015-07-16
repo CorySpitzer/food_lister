@@ -1,1 +1,1 @@
-$(#foods-div).html('<%= j render(@food) %>')
+$("#foods-div").html("<%= escape_javascript(render("foods_table")) %>");

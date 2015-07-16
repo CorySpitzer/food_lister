@@ -2,7 +2,7 @@ module ApplicationHelper
   def sortable(sort_type)
     title = sort_type.titleize
     direction = sort_type == params[:sort] && params[:direction] == "asc" ? "desc" : "asc"
-    link_to title, params.merge(:sort => sort_type, :direction => direction, :page => nil)
+    link_to title, {:sort => sort_type, :direction => direction, :page => nil, :remote => true}
   end
 
   def get_arrow(sort_type)
