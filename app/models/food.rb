@@ -1,5 +1,7 @@
 class Food < ActiveRecord::Base
-
+  validates_presence_of :name
+  validates_presence_of :serving
+  validates_presence_of :calories
   belongs_to(:user)
 
   def self.column_names

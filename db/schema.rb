@@ -11,12 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150716182554) do
-
-  create_table "days", force: :cascade do |t|
-    t.datetime "date"
-    t.integer  "user_id"
-  end
+ActiveRecord::Schema.define(version: 20150716205137) do
 
   create_table "foods", force: :cascade do |t|
     t.string  "name"

@@ -5,6 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many(:foods)
-  has_many(:days)
 
 end

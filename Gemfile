@@ -15,6 +15,8 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
+gem 'simple_form'
+gem 'textacular', '~> 3.0'
 
 group :production do
   gem 'rails_12factor'
